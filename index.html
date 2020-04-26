@@ -2,10 +2,10 @@
 <html>
 	<head>
 	<title>115/119</title>
-	<link rel="stylesheet" href="styles.css">
-    <style>	</style>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 	<a href="#production">Production</a>
 	<a href="#workingplaces">Working Places</a>
 	<a href="#reports">Reports</a>
-	<!-- I want to make this font biger when hover over it -->
+	<!-- Ek wil hierdie font groter maak wanneer jy met jou muis daaroor gaan??? -->
 	<a href="#" font-size="150%">Log Out</a>
 	</div>
 
@@ -53,7 +53,10 @@
       <input type="password" placeholder="Enter Password" name="psw" required>
         
       <button type="submit">Login</button>
-      <label>
+	  
+	  <!-- Onthou om 'n "Register" ook in te sit, vir nuwe users -->
+      
+	  <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
     </div>
@@ -66,10 +69,10 @@
 </div>
 
 <script>
-// Get the modal
+// Kry die Login Screen
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
+// Hy moet die Login Screen toe maak wanneer jy buite die blokkie druk!
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
