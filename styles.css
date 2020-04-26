@@ -13,6 +13,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 * {box-sizing: border-box;}
+body {margin:0;}
 
 h1 {
 /* This is my header 1 style */
@@ -25,8 +26,6 @@ h1 {
 p {
     color: black;
 }
-
-body {margin:0;}
 
 .navbar {
   overflow: hidden;
@@ -54,7 +53,7 @@ body {margin:0;}
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 100%;
+  height: 300px;   /* Was 100% , toe maak ek dit 300px om te sien of ek my logo kan sien deur te kan scroll */
 }
 
 .input-container {
