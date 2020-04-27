@@ -45,7 +45,7 @@ p {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  width: 25%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  width: 16.66%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
 }
 
 /* Add a background color on mouse-over */
@@ -67,7 +67,7 @@ p {
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 300px;   /* Was 100% , toe maak ek dit 300px om te sien of ek my logo kan sien deur te kan scroll */
+  height: 800px;   /* Was 100% , toe maak ek dit 800px om te sien of ek my logo kan sien deur te kan scroll */
 }
 
 .input-container {
