@@ -31,36 +31,36 @@
 
 		<div class="main">
 			<h2>The Home of Champions!</h2>
-				
+			
+			<br>
+			</br>
+			
 			<h2>Please Login First:</h2>
 		
 			<button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
 		
 			
-			<!-- Login begin hier -->
-			<div id="id01" class="modal">
+		<!-- Login begin hier -->
+		<div id="id01" class="modal">
 		
-				<form class="modal-content animate" action="/action_page.php" method="post">
-					<div class="imgcontainer">
-						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
-						<img src="logo.png" alt="Logo" class="logo" style="padding: 2px">
-					</div>
-		
-					<div class="container">
-						<label for="uname"><b>Username</b></label>
-						<input type="text" placeholder="Enter Username" name="uname" required>
-						<label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw" required>
-						<button type="submit">Login</button>
-						<input type="checkbox" checked="checked" name="remember"> Remember me
-					</div>
-			
-					<div class="container" style="background-color:#f1f1f1">
-						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						<span class="psw">Forgot <a href="#">password?</a></span>
-					</div>
-				</form>
-			</div>
+			<form class="modal-content animate" action="/action_page.php" method="post">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
+					<img src="logo.png" alt="Logo" class="logo" style="padding: 2px">
+				</div>
+				<div class="container">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+					<button type="submit">Login</button>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</div>
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+			</form>
 		</div>
 		
 		<h2>Or You may Register if you do not have access:</h2>
