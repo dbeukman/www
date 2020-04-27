@@ -45,6 +45,18 @@ p {
   width: 16.66%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
 }
 
+/* This will be the first Navigation links */
+.navbar a.active {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;  /* If you want the text to be centered */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.66%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+}
+
 /* Add a background color on mouse-over */
 .navbar a:hover {
   background: #aeafb5;
