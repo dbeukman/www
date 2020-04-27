@@ -41,8 +41,7 @@
 		
 		<button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
 		
-		<h2>Or You may Register if you do not have access:</h2>
-		
+			
 		<!-- Login begin hier -->
 		<div id="id01" class="modal">
 		
@@ -66,41 +65,42 @@
 					<span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
 			</form>
+		</div>
 		
+		<h2>Or You may Register if you do not have access:</h2>
+		
+		<!-- Register Form begin hier -->
+		<form action="/action_page.php" style="max-width:500px;margin:auto">
+			<h2>Register Form</h2>
+			<div class="input-container">
+				<i class="fa fa-user icon"></i>
+				<input class="input-field" type="text" placeholder="Username" name="usrnm">
+			</div>
 			
-			<!-- Register Form begin hier -->
-			<form action="/action_page.php" style="max-width:500px;margin:auto">
-				<h2>Register Form</h2>
-				<div class="input-container">
-					<i class="fa fa-user icon"></i>
-					<input class="input-field" type="text" placeholder="Username" name="usrnm">
-				</div>
-				
-				<div class="input-container">
-					<i class="fa fa-envelope icon"></i>
-					<input class="input-field" type="text" placeholder="Email" name="email">
-				</div>
-				
-				<div class="input-container">
-					<i class="fa fa-key icon"></i>
-					<input class="input-field" type="password" placeholder="Password" name="psw">
-				</div>
-				
-				<button type="submit" class="btn">Register</button>
-			</form>
+			<div class="input-container">
+				<i class="fa fa-envelope icon"></i>
+				<input class="input-field" type="text" placeholder="Email" name="email">
+			</div>
+			
+			<div class="input-container">
+				<i class="fa fa-key icon"></i>
+				<input class="input-field" type="password" placeholder="Password" name="psw">
+			</div>
+			
+			<button type="submit" class="btn">Register</button>
+		</form>
 		
-			<script>
-				// Kry die Login Screen
-				var modal = document.getElementById('id01');
-				
-				// Hy moet die Login Screen toe maak wanneer jy buite die blokkie druk!
-				window.onclick = function(event) {
-				if (event.target == modal) {
-				modal.style.display = "none";
-					}
+		<script>
+			// Kry die Login Screen
+			var modal = document.getElementById('id01');
+			
+			// Hy moet die Login Screen toe maak wanneer jy buite die blokkie druk!
+			window.onclick = function(event) {
+			if (event.target == modal) {
+			modal.style.display = "none";
 				}
-			</script>
-		</div>	
+			}
+		</script>
 			
 	</body>
 
