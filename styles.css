@@ -1,11 +1,11 @@
 img {
-	size: 200px;
+	size: 20%;
 	padding-left: 79%;
 	padding-top: 4%;
 }
 
 img.logo {
-	width: 200px;
+	width: 20%;
 	position: relative;
 }
 
@@ -67,7 +67,7 @@ p {
 .main {
   padding: 16px;
   margin-top: 30px;
-  height: 1000px;   /* Was 100% , toe maak ek dit 1000px om te sien of ek my logo kan sien deur te kan scroll */
+  height: 800px;   /* Was 100% , toe maak ek dit 800px om te sien of ek my logo kan sien deur te kan scroll */
 }
 
 .input-container {
