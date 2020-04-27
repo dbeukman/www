@@ -1,12 +1,8 @@
-img {
-	size: 16%;
-	position: centered;
-	padding-top: 4%;
-}
 
 img.logo {
 	width: 25%;
 	position: relative;
+	padding-top: 4%;
 }
 
 body {
