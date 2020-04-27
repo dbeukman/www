@@ -1,6 +1,6 @@
 
 img.logo {
-	width: 25%;
+	width: 20%;
 	position: responsiveness;
 	padding-top: 4%;
 	padding-left: 70%
@@ -14,7 +14,7 @@ body {margin:0;}
 
 h1 {
 /* This is my header 1 style */
-	font-size: 250%;
+	font-size: 350%;
     color: blue;
     text-align: center;
 	padding: 15px;
