@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- HIERDIE TAG WAS MISSING -->
+<html lang='en'> <!-- HET DIE LANG ATTRIBUTE BYGEVOEG -->
 	<head>
+        <meta charset='utf-8'> <!-- HIERDIE META TAG IS BAIE BELANGRIK -->
 		<title>115/119</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16">
-	
+
+<!-- EK HET JOU STYLESHEET VERANDER - IETS WAS NIE HEELTEMAL REG NIE -->
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -14,90 +16,76 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #000000; 
+  background-color: #333;
+  font-family: Arial;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
-  background: #000000;
-  color: #967c42;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  width: 14.758%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
-}
-
-/* This will be the first Navigation links */
-.navbar a.active {
-  float: left;
-  font-size: 16px;
-  background: #aeafb5;
-  color: #967c42;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.subnav {
+.dropdown {
   float: left;
   overflow: hidden;
 }
 
-/* Color = Grey: #aeafb5 */
-/* Color = Gold: #967c42 */
-/* Color = White: #f2f2f2 */
-/* Color = Black: #000000 */
-
-.subnav .subnavbtn {
-  font-size: 16px;  
+.dropdown .dropbtn {
+  font-size: 16px;
   border: none;
   outline: none;
-  color: #f2f2f2;
+  color: white;
   padding: 14px 16px;
-  background-color: black;
+  background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: #aeafb5;
-  color: #967c42;
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
 
-.subnav-content {
+.dropdown-content {
   display: none;
   position: absolute;
-  left: 0;
-  background-color: #aeafb5;
-  width: 100%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.subnav-content a {
-  float: left;
-  color: #f2f2f2;
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
   text-decoration: none;
-}
-
-.subnav-content a:hover {
-  background-color: #aeafb5;
-  color: #967c42;
-}
-
-.subnav:hover .subnav-content {
   display: block;
+  text-align: left;
 }
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
 </style>
 </head>
 <body>
 
+<!-- EK HET DIE STYLE SHEETS SE SELECTORS GEUPDATE -->
+
 <div class="navbar">
   <!--<a href="#home">Home</a>-->
   <a class="active" href="#home">Admin</a>
-  <div class="subnav">
-    <button class="subnavbtn">Employees <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
+  <div class="dropdown">
+    <button class="dropbtn">Employees <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
       <a href="#addemployee">Add Employee</a>
       <a href="#editemployee">Edit Employee</a>
       <a href="#rememployee">Remove Employee</a>
@@ -106,9 +94,9 @@ body {
       <a href="#remjob">Remove Occupation</a>
     </div>
   </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Machines <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
+  <div class="dropdown">
+    <button class="dropbtn">Machines <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
       <a href="#bring">Add Machine</a>
       <a href="#deliver">Edit Machine</a>
       <a href="#package">Remove Machine</a>
@@ -117,9 +105,9 @@ body {
 	  <a href="#">Remove Machine</a>
     </div>
   </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Working Places <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
+  <div class="dropdown">
+    <button class="dropbtn">Working Places <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
       <a href="#addsect">Add Section</a>
       <a href="#editsect">Edit Section</a>
       <a href="#remsect">Remove Section</a>
@@ -128,9 +116,9 @@ body {
       <a href="#rempan">Remove Panel</a>
     </div>
   </div>
-  <div class="subnav">
-    <button class="subnavbtn">Reports <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
+  <div class="dropdown">
+    <button class="dropbtn">Reports <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
       <a href="#viewrep">View Reports</a>
       <a href="#editrep">Edit Reports</a>
       <a href="#printrep">Print Reports</a>
@@ -139,10 +127,11 @@ body {
 	  <a href="#">Remove Machine</a>
     </div>
   </div>
+</div><!-- HIERDIE TAG WAS MISSING -->
 
 <div style="padding:0 16px">
 	
-  <h3>Subnav/dropdown menu inside a Navigation Bar</h3>
+  <h3>dropdown/dropdown menu inside a Navigation Bar</h3>
   <p>Hover over the "about", "services" or "partners" link to see the sub navigation menu.</p>
 </div>
 
