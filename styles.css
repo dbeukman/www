@@ -24,44 +24,76 @@ p {
     color: black;
 }
 
-/* Style the navigation menu */
-.navbar {
-  width: 100%;
-  overflow: auto;     /* Change from hidden to auto */
-  background-color: #333;
-  position: fixed;
-  top: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
-/* Navigation links */
+.increasefont:hover{
+	font-size:1.1em;
+}
+	
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
 .navbar a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;  /* If you want the text to be centered */
+  font-size: 16px;
+  color: white;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  width: 16.66%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
 }
 
-/* This will be the first Navigation links */
-.navbar a.active {
-  background: #aeafb5;	
-  display: block;
-  color: #967c42;
-  text-align: center;  /* If you want the text to be centered */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  width: 16.66%;  /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
-/* Add a background color on mouse-over */
-.navbar a:hover {
-  background: #aeafb5;
-  color: #967c42;
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
 }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} 
 
 /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
 @media screen and (max-width: 500px) {
@@ -133,7 +165,6 @@ input[type=text], input[type=password] {
 button {
   background-color: #4CAF50;
   color: white;
-  width: 100px;
   height: 40px;
   padding: 14px 20px;
   margin: 8px 0;
@@ -145,12 +176,16 @@ button:hover {
   opacity: 0.8;
 }
 
+
+
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: 100px;
   height: 40px;
   padding: 10px 18px;
   background-color: #f44336;
+  text-decoration: none;
+  color: #FFF;
 }
 
 /* Center the image and position the close button */
