@@ -1,9 +1,12 @@
+<!-- When you write anything between "<!--" it is only there as a reminder and will not show in the web page. -->
+<!-- You must start every page in html with <!Doctype html> followed by <html> and <head>, you must also remember to close it again with </head> and </html> -->
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- The title of the page is typed between <title> and </title> -->
 		<title>115/119</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="styles.css"><!-- CSS stands for Cascading Stile Sheet -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16">
 	</head>
@@ -15,15 +18,22 @@
 				<p>Hello</p>
 		
 		<img src="logo.png" alt="Logo" class="logo" style="padding: 2px">
+		<!-- This is to add an image to your web page... "src" stands for source which is the name and location of the image. Make sure that the extention of 
+		the file is correct by right clicking on it and propeties. You can adjust the image size by adding height attribure e.g. height -->
+
+		<!-- The background image can be repeated either over the whole screen: "background-image:url(logo.png);" ,or only once: "background-repeat:no-repeat;" ,
+		or only repeat horizontally: "background-repeat:repeat-x;" ,or only repeat vertically: "background-repeat:repeat-y;" -->
 		
 		<!-- My Logo wil nie wys op die regter kant nie -->
 		
-		<h1>Welcome to Section 115/119</h1>
+		<h1><u>Welcome to Section 115/119</u></h1>
+		<!-- The <h1> is the biggest header and <h6> the smallest -->
+		<!-- The <u> is to undertile something -->
 
 		<div class="main">
 			<h2>The Home of Champions!</h2>
 			
-			<br>
+			<br><!-- The <br /> is to insert a break to the next line -->
 			</br>
 			
 			<h2>Please Login First:</h2>
@@ -39,6 +49,9 @@
 			<form class="modal-content animate" action="/action_page.php" method="post">
 				<div class="imgcontainer">
 					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Window">&times;</span>
+					
+					<!-- Span tags is useful when you want to only highlight something that is standing in between the span tags -->
+					
 					<img src="logo.png" alt="Logo" class="logo" style="padding: 2px">
 				</div>
 				<div class="container">

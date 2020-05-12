@@ -1,4 +1,6 @@
 
+/* When you want to add footnotes in this CSS (Cascading Stile Sheet) you can not use: "<!-- & -->" but must use " /* " in stead! */
+
 img.logo {
 	width: 20%;
 	position: responsiveness;

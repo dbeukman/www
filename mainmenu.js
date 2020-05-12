@@ -1,4 +1,4 @@
-document.write("<!--<a href='#home'>Home</a>-->");
+document.write("<!--<a href='#home'>Home</a>-->");       /* The "href" will link you to the website: Home or index --> */
 document.write("<a href='index.html'>Home</a>");
 document.write("<a class='active' href='admin.html'>Admin</a>");
 document.write("<div class='dropdown'>");
